@@ -1,3 +1,0 @@
-class Envelope
-
-end
