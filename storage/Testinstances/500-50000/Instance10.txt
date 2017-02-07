@@ -1,8 +1,9 @@
-Nr.Kuponave=500
+Nr.Kuponave=501
 ShumaTotale=50000
 NrllojeveTePlikove=3
 Llojet e plikove={(30,250,10),(40,501,15),(50,801,20)}
 Totali:50000.00
+1234.56
 838.44
 186.35
 465.88

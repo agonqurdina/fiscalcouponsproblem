@@ -5,7 +5,7 @@ class Coupon
     self.price = price
   end
 
-  def cost(envelope)
-    (envelope.free_amount - price).to_i.abs
+  def cost(free_amount)
+    (free_amount - price).abs
   end
 end
