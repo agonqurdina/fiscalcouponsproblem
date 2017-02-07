@@ -18,9 +18,9 @@ class Grasp
       file.readline.split('=').last.to_s.scan(/\(.*?\)/).each do |match|
         match[0] = match[match.length - 1] = ''
 
-        min_count, max_value, price = match.split(',')
+        min_count, max_amount, price = match.split(',')
 
-        self.envelope_types << EnvelopeType.new(min_count, max_value, price)
+        self.envelope_types << EnvelopeType.new(min_count, max_amount, price)
       end
 
       file.readline # skip duplicate Totali
@@ -32,4 +32,6 @@ class Grasp
       end
     end
   end
+
+
 end
