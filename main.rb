@@ -1,17 +1,17 @@
 require './src/coupon.rb'
 require './src/envelope.rb'
 require './src/envelope_type.rb'
+require './src/solution.rb'
 require './src/grasp.rb'
 
 grasp = Grasp.new
 grasp.initialize_from_file('./storage/Testinstances/500-50000/Instance10.txt')
+p grasp.available_coupons.length
 grasp.execute!
 
-p grasp.available_coupons.first
-p grasp.envelopes.length
-p grasp.envelopes.map { |e| e.envelope_type.price }
-
-p grasp.envelopes.map { |e| e.coupons.count }
-
-p grasp.envelopes[8].coupons.map {|c| c.price}
-
+p 'Available coupons: '
+p grasp.available_coupons.length
+p 'Envelopes length: '
+p grasp.best_solution.envelopes.length
+p 'Envelopes: '
+p grasp.best_solution.envelopes.map { |e| e.envelope_type.price }
