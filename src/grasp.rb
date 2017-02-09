@@ -43,6 +43,7 @@ class Grasp
 
   def execute!
     self.best_solution = initial_greedy_solution
+    tweak
   end
 
   def initial_greedy_solution(candidate_solution = nil, current_envelope_type_index = 0)
@@ -72,4 +73,7 @@ class Grasp
     candidate_solution
   end
 
+  def tweak
+    candidate_solution = Solution.new(best_solution.envelopes)
+  end
 end
