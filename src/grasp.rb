@@ -70,10 +70,27 @@ class Grasp
         initial_greedy_solution(candidate_solution, current_envelope_type_index + 1)
       end
     end
+    candidate_solution.unassigned_coupons = available_coupons
     candidate_solution
   end
 
   def tweak
-    candidate_solution = Solution.new(best_solution.envelopes)
+    candidate_solution = Solution.new(best_solution)
+    length = candidate_solution.envelopes.length
+    if length > 1
+      rand1 = rand(length)
+      rand2 = rand(length)
+      while rand1 == rand2
+        rand2 = rand(length)
+      end
+      mutate(candidate_solution.envelopes, rand1, rand2)
+      if candidate_solution.cost > best_solution.cost
+        self.best_solution = candidate_solution
+      end
+    end
+  end
+
+  def mutate(envelopes, val1, val2)
+    envelopes[val1].coupons[0], envelopes[val2].coupons[0] = envelopes[val2].coupons[0], envelopes[val1].coupons[0]
   end
 end
