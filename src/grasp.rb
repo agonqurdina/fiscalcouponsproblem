@@ -47,7 +47,7 @@ class Grasp
   def execute!
     self.best_solution = initial_greedy_solution
     spread_non_assigned_coupons
-    tweak
+    local_search
   end
 
   private
@@ -87,17 +87,10 @@ class Grasp
     end
   end
 
-  def tweak
+  def local_search
     no_improvement_count = 0
     while no_improvement_count < self.max_iterations
-      candidate_solution = DeepClone.clone(best_solution)
-      length = candidate_solution.envelopes.length
-      rand1 = rand(length)
-      rand2 = rand(length)
-      while rand1 == rand2
-        rand2 = rand(length)
-      end
-      mutate(candidate_solution, rand1, rand2)
+      candidate_solution = tweak
       if candidate_solution.cost > best_solution.cost
         self.best_solution = candidate_solution
         p 'IMPROVEMENT'
@@ -106,6 +99,18 @@ class Grasp
         no_improvement_count += 1
       end
     end
+  end
+
+  def tweak
+    candidate_solution = DeepClone.clone(best_solution)
+    length = candidate_solution.envelopes.length
+    rand1 = rand(length)
+    rand2 = rand(length)
+    while rand1 == rand2
+      rand2 = rand(length)
+    end
+    mutate(candidate_solution, rand1, rand2)
+    candidate_solution
   end
 
   def mutate(candidate_solution, val1, val2)
