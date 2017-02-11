@@ -1,14 +1,9 @@
 class Solution
   attr_accessor :envelopes, :unassigned_coupons
 
-  def initialize(solution = nil)
-    if solution.nil?
-      self.envelopes = []
-      self.unassigned_coupons = []
-    else
-      self.envelopes = solution.envelopes
-      self.unassigned_coupons = solution.unassigned_coupons
-    end
+  def initialize
+    self.envelopes = []
+    self.unassigned_coupons = []
   end
 
   def cost
@@ -20,17 +15,16 @@ class Solution
     cost
   end
 
-  private
   def update_envelopes
     invalid_envelopes = []
     envelopes.each do |envelope|
       unless envelope.valid?
-        unassigned_coupons += envelope.coupons
+        self.unassigned_coupons += envelope.coupons
         invalid_envelopes << envelope
       end
     end
     invalid_envelopes.each do |envelope|
-      envelopes.delete envelope
+      self.envelopes.delete envelope
     end
   end
 
