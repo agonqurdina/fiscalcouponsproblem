@@ -46,6 +46,7 @@ class Grasp
 
   def execute!
     self.best_solution = initial_greedy_solution
+    spread_non_assigned_coupons
     tweak
   end
 
@@ -74,17 +75,19 @@ class Grasp
         initial_greedy_solution(candidate_solution, envelope_type_index + 1)
       end
     end
+
     candidate_solution
   end
 
-  def tweak
-    envelopes_count = best_solution.envelopes.length
-    available_coupons.length.times do |index|
-      coupon = available_coupons[index]
+  def spread_non_assigned_coupons
+    available_coupons.each_with_index do |coupon, index|
+      envelopes_count = best_solution.envelopes.length
       best_solution.envelopes[envelopes_count.modulo(index + 1)].coupons << coupon
       available_coupons.delete coupon
     end
+  end
 
+  def tweak
     no_improvement_count = 0
     while no_improvement_count < self.max_iterations
       candidate_solution = DeepClone.clone(best_solution)
