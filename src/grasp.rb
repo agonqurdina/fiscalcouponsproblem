@@ -1,11 +1,12 @@
 require "deep_clone"
 class Grasp
-  attr_accessor :envelope_types, :best_solution, :available_coupons, :random_percentage, :random_count, :max_no_improvement
+  attr_accessor :envelope_types, :best_solution, :available_coupons, :random_percentage, :random_count, :max_no_improvement, :max_iterations
 
-  def initialize(random_percentage = 0.07, max_no_improvement = 50)
+  def initialize(random_percentage = 0.07, max_iterations = 10, max_no_improvement = 50)
     self.envelope_types = []
     self.available_coupons = []
     self.max_no_improvement = max_no_improvement
+    self.max_iterations = max_iterations
     self.random_percentage = random_percentage
   end
 
@@ -45,9 +46,21 @@ class Grasp
   end
 
   def execute!
-    self.best_solution = initial_greedy_solution
-    spread_non_assigned_coupons
-    local_search
+    index = 0
+    all_coupons = self.available_coupons
+    time = Time.new
+    while index < max_iterations
+      self.available_coupons = DeepClone.clone(all_coupons)
+      solution = initial_greedy_solution
+      solution = spread_non_assigned_coupons(solution)
+      solution = local_search(solution)
+      if best_solution.nil? or solution.cost > best_solution.cost
+        self.best_solution = solution
+      end
+      p 'cost: ' + solution.cost.to_s
+      index += 1
+    end
+    p Time.new - time
   end
 
   private
@@ -79,30 +92,32 @@ class Grasp
     candidate_solution
   end
 
-  def spread_non_assigned_coupons
+  def spread_non_assigned_coupons(solution)
     available_coupons.each_with_index do |coupon, index|
-      envelopes_count = best_solution.envelopes.length
-      best_solution.envelopes[envelopes_count.modulo(index + 1)].coupons << coupon
+      envelopes_count = solution.envelopes.length
+      solution.envelopes[index.modulo(envelopes_count)].coupons << coupon
       available_coupons.delete coupon
     end
+    solution
   end
 
-  def local_search
+  def local_search(solution)
     no_improvement_count = 0
     while no_improvement_count < self.max_no_improvement
-      candidate_solution = tweak
-      if candidate_solution.cost > best_solution.cost
-        self.best_solution = candidate_solution
+      candidate_solution = tweak(solution)
+      if candidate_solution.cost > solution.cost
+        solution = candidate_solution
         p 'IMPROVEMENT'
         no_improvement_count = 0
       else
         no_improvement_count += 1
       end
     end
+    solution
   end
 
-  def tweak
-    candidate_solution = DeepClone.clone(best_solution)
+  def tweak(solution)
+    candidate_solution = DeepClone.clone(solution)
     length = candidate_solution.envelopes.length
     rand1 = rand(length)
     rand2 = rand(length)
