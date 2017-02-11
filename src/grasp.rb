@@ -46,6 +46,7 @@ class Grasp
 
   def execute!
     self.best_solution = initial_greedy_solution
+    spread_non_assigned_coupons
     tweak
   end
 
@@ -75,12 +76,15 @@ class Grasp
       end
     end
 
-    available_coupons.each_with_index do |coupon, index|
-      envelopes_count = candidate_solution.envelopes.length
-      candidate_solution.envelopes[envelopes_count.modulo(index + 1)].coupons << coupon
-    end
-
     candidate_solution
+  end
+
+  def spread_non_assigned_coupons
+    available_coupons.each_with_index do |coupon, index|
+      envelopes_count = best_solution.envelopes.length
+      best_solution.envelopes[envelopes_count.modulo(index + 1)].coupons << coupon
+      available_coupons.delete coupon
+    end
   end
 
   def tweak
