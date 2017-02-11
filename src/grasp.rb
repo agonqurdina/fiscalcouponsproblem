@@ -130,7 +130,10 @@ class Grasp
 
   def mutate(candidate_solution, val1, val2)
     envelopes = candidate_solution.envelopes
-    envelopes[val1].coupons[0], envelopes[val2].coupons[0] = envelopes[val2].coupons[0], envelopes[val1].coupons[0]
-    # candidate_solution.update_envelopes
+    coupon1 = envelopes[val1].coupons.sample
+    index1 = envelopes[val1].coupons.index(coupon1)
+    coupon2 = envelopes[val2].coupons.sample
+    index2 = envelopes[val2].coupons.index(coupon2)
+    envelopes[val1].coupons[index1], envelopes[val2].coupons[index2] = envelopes[val2].coupons[index2], envelopes[val1].coupons[index1]
   end
 end
