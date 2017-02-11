@@ -1,11 +1,11 @@
 require "deep_clone"
 class Grasp
-  attr_accessor :envelope_types, :best_solution, :available_coupons, :random_percentage, :random_count, :max_iterations
+  attr_accessor :envelope_types, :best_solution, :available_coupons, :random_percentage, :random_count, :max_no_improvement
 
-  def initialize(random_percentage = 0.07, max_iterations = 50)
+  def initialize(random_percentage = 0.07, max_no_improvement = 50)
     self.envelope_types = []
     self.available_coupons = []
-    self.max_iterations = max_iterations
+    self.max_no_improvement = max_no_improvement
     self.random_percentage = random_percentage
   end
 
@@ -89,7 +89,7 @@ class Grasp
 
   def local_search
     no_improvement_count = 0
-    while no_improvement_count < self.max_iterations
+    while no_improvement_count < self.max_no_improvement
       candidate_solution = tweak
       if candidate_solution.cost > best_solution.cost
         self.best_solution = candidate_solution
