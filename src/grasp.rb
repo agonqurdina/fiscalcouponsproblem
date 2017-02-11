@@ -77,8 +77,10 @@ class Grasp
 
     available_coupons.each_with_index do |coupon, index|
       envelopes_count = candidate_solution.envelopes.length
-      candidate_solution.envelopes[envelopes_count.modulo(index)].coupons << coupon
+      candidate_solution.envelopes[envelopes_count.modulo(index + 1)].coupons << coupon
     end
+
+    candidate_solution
   end
 
   def tweak
