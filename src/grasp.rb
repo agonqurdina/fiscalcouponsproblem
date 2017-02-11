@@ -74,8 +74,11 @@ class Grasp
         initial_greedy_solution(candidate_solution, envelope_type_index + 1)
       end
     end
-    candidate_solution.unassigned_coupons = available_coupons
-    candidate_solution
+
+    available_coupons.each_with_index do |coupon, index|
+      envelopes_count = candidate_solution.envelopes.length
+      candidate_solution.envelopes[envelopes_count.modulo(index)] << coupon
+    end
   end
 
   def tweak
