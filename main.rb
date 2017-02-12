@@ -34,9 +34,9 @@ puts 'Unassigned coupons: '
 puts grasp.best_solution.unassigned_coupons.length
 puts grasp.best_solution.unassigned_coupons.map {|c| c.price.to_f.round(2)}.join(',')
 puts 'Envelopes length: '
-puts grasp.best_solution.envelopes.length
+puts grasp.best_solution.envelopes.select { |e| e.valid? }.length
 puts 'Envelopes: '
-puts grasp.best_solution.envelopes.map { |e| e.envelope_type.price }.join(',')
-puts grasp.best_solution.envelopes.map { |e| e.current_amount.to_f.round(2) }.join(',')
+puts grasp.best_solution.envelopes.select { |e| e.valid? }.map { |e| e.envelope_type.price }.join(',')
+puts grasp.best_solution.envelopes.select { |e| e.valid? }.map { |e| e.current_amount.to_f.round(2) }.join(',')
 puts 'Total Price: '
 puts grasp.best_solution.cost

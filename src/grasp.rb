@@ -67,7 +67,7 @@ class Grasp
   private
   def initial_greedy_solution(candidate_solution = nil, envelope_type_index = 0)
     if candidate_solution.nil?
-      candidate_solution = Solution.new
+      candidate_solution = Solution.new(envelope_types)
     end
     current_envelope = Envelope.new(envelope_types[envelope_type_index])
     available_coupons.length.times do |i|
@@ -105,6 +105,8 @@ class Grasp
       available_coupons.clear
 
       solution.envelopes << new_envelope
+    else
+      solution.envelopes << Envelope.new(envelope_types.last)
     end
 
     solution
