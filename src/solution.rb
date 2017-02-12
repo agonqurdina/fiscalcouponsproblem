@@ -27,5 +27,4 @@ class Solution
       self.envelopes.delete envelope
     end
   end
-
 end

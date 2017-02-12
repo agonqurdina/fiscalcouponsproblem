@@ -42,6 +42,7 @@ class Grasp
         self.available_coupons << Coupon.new(price) if price
       end
     end
+
     self.random_count = random_percentage * available_coupons.length
   end
 
@@ -93,11 +94,19 @@ class Grasp
   end
 
   def spread_non_assigned_coupons(solution)
-    available_coupons.each_with_index do |coupon, index|
-      envelopes_count = solution.envelopes.length
-      solution.envelopes[index.modulo(envelopes_count)].coupons << coupon
-      available_coupons.delete coupon
+    # available_coupons.each_with_index do |coupon, index|
+    #   envelopes_count = solution.envelopes.length
+    #   solution.envelopes[index.modulo(envelopes_count)].coupons << coupon
+    #   available_coupons.delete coupon
+    # end
+    if available_coupons.length > 0
+      new_envelope = Envelope.new(envelope_types.last)
+      new_envelope.coupons = available_coupons.clone
+      available_coupons.clear
+
+      solution.envelopes << new_envelope
     end
+
     solution
   end
 
@@ -110,6 +119,7 @@ class Grasp
         p 'IMPROVEMENT'
         no_improvement_count = 0
       else
+        p "tweak cost: #{candidate_solution.cost}"
         no_improvement_count += 1
       end
     end
@@ -130,10 +140,30 @@ class Grasp
 
   def mutate(candidate_solution, val1, val2)
     envelopes = candidate_solution.envelopes
-    coupon1 = envelopes[val1].coupons.sample
-    index1 = envelopes[val1].coupons.index(coupon1)
-    coupon2 = envelopes[val2].coupons.sample
-    index2 = envelopes[val2].coupons.index(coupon2)
-    envelopes[val1].coupons[index1], envelopes[val2].coupons[index2] = envelopes[val2].coupons[index2], envelopes[val1].coupons[index1]
+    arr1 = envelopes[val1].coupons
+    arr2 = envelopes[val2].coupons
+
+    # coupon1 = envelopes[val1].coupons.sample
+    # index1 = envelopes[val1].coupons.index(coupon1)
+    # coupon2 = envelopes[val2].coupons.sample
+    # index2 = envelopes[val2].coupons.index(coupon2)
+
+    max_length = [arr1.length - 1, arr2.length - 1].max
+
+    rand1 = rand(max_length)
+    begin
+      rand2 = rand(max_length)
+    end while rand2 < rand1
+
+    tmp = arr1[rand1..rand2]
+    arr1[rand1..rand2] = arr2[rand1..rand2]
+    arr2[rand1..rand2] = tmp
+
+    p [rand1, rand2]
+    arr1.delete_if { |i| i.nil? }
+    arr2.delete_if { |i| i.nil? }
+
+
+    # envelopes[val1].coupons[index1], envelopes[val2].coupons[index2] = envelopes[val2].coupons[index2], envelopes[val1].coupons[index1]
   end
 end
