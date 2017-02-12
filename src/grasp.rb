@@ -69,7 +69,11 @@ class Grasp
     if candidate_solution.nil?
       candidate_solution = Solution.new(envelope_types)
     end
-    current_envelope = Envelope.new(envelope_types[envelope_type_index])
+
+    # TODO: chose between modes (lines) by uncomenting
+    # current_envelope = Envelope.new(envelope_types.last) # ma shum variacion
+    current_envelope = Envelope.new(envelope_types[envelope_type_index]) # ma pak variacion
+
     available_coupons.length.times do |i|
       coupons = available_coupons.sort_by { |o| o.cost(current_envelope.free_amount) }[0...random_count]
       coupon = coupons[rand(coupons.length)]
