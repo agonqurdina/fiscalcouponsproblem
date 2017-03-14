@@ -2,7 +2,6 @@ Nr.Kuponave=2000
 ShumaTotale=500000
 NrllojeveTePlikove=3
 Llojet e plikove={(30,250,10),(40,501,15),(50,801,20)}
-Totali:500000.00
 3425.72
 3425.95
 934.35

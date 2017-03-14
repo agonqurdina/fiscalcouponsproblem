@@ -19,9 +19,9 @@ class Grasp
     |file|
 
       # Read Metadata
-      coupons_count = file.readline.split('=').last.to_i
-      total_price = file.readline.split('=').last.to_i
-      envelope_count = file.readline.split('=').last.to_i
+      coupons_count = file.readline.split(':').last.to_i
+      total_price = file.readline.split(':').last.to_i
+      envelope_count = file.readline.split(':').last.to_i
 
       # Create Envelope Types
       file.readline.split('=').last.to_s.scan(/\(.*?\)/).each do |match|
@@ -34,7 +34,7 @@ class Grasp
 
       self.envelope_types.sort_by! { |o| o.price }.reverse!
 
-      file.readline # skip duplicate Totali
+      # file.readline # skip duplicate Totali
 
       # Create Coupons
       coupons_count.times do
@@ -47,6 +47,7 @@ class Grasp
   end
 
   def execute!
+    sort_envelope_types(0)
     index = 0
     all_coupons = self.available_coupons
     time = Time.new
@@ -61,10 +62,23 @@ class Grasp
       p 'cost: ' + solution.cost.to_s
       index += 1
     end
-    p Time.new - time
+    execution_time = (Time.new - time)
+    puts "\nFinished!"
+    puts "\nExecution time: " + execution_time.to_s
   end
 
   private
+  def sort_envelope_types(mode = 0)
+    #modes: 0 - sort by :price, 1 - higher average coupon price - better, 2 - lower average coupon price - better
+    if mode == 0
+      self.envelope_types = envelope_types.sort {|x,y| y.price <=> x.price}
+    elsif mode == 1
+      self.envelope_types = envelope_types.sort {|x,y| y.score <=> x.score}
+    elsif mode == 2
+      self.envelope_types = envelope_types.sort {|x,y| x.score <=> y.score}
+    end
+  end
+
   def initial_greedy_solution(candidate_solution = nil, envelope_type_index = 0)
     if candidate_solution.nil?
       candidate_solution = Solution.new(envelope_types)
