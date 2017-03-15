@@ -35,12 +35,13 @@ require 'readline'
 # # END OF SWAP method
 
 grasp = Grasp.new(0.01)
-grasp.initialize_from_file(ARGV[0] || './storage/Testinstances/New Set/Instance1.txt')
-grasp.execute!
+grasp.initialize_from_file(ARGV[0] || './storage/Testinstances/New Set/Instance2.txt')
+grasp.execute!(1)
 
 puts 'Unassigned coupons: '
-puts grasp.best_solution.unassigned_coupons.length
-puts grasp.best_solution.unassigned_coupons.map {|c| c.price.to_f.round(2)}.join(',')
+puts 'Length: ' + grasp.best_solution.unassigned_coupons.length.to_s
+puts 'Total Price: ' + grasp.best_solution.unassigned_coupons.map {|c| c.price.to_f.round(2)}.inject(:+).to_f.round(2).to_s
+puts 'Coupons: ' + grasp.best_solution.unassigned_coupons.map {|c| c.price.to_f.round(2)}.join(',')
 puts 'Envelopes length: '
 puts grasp.best_solution.envelopes.select { |e| e.valid? }.length
 puts 'Envelopes: '

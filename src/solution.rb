@@ -12,6 +12,15 @@ class Solution
     if envelopes.length > 0
       update_envelopes
       cost = envelopes.select { |e| e.valid? }.map { |e| e.envelope_type.price }.inject(:+)
+      if unassigned_coupons.nil?
+        self.unassigned_coupons = []
+      end
+      envelopes.select { |e| !e.valid? }.each do |envelope|
+        unless envelope.coupons.nil?
+          coupon_ids = unassigned_coupons.map {|uc| uc.id}
+          self.unassigned_coupons += envelope.coupons.select {|unused_coupon| !coupon_ids.include?(unused_coupon.id) }
+        end
+      end
     end
     cost
   end

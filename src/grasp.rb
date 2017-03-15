@@ -37,23 +37,24 @@ class Grasp
       # file.readline # skip duplicate Totali
 
       # Create Coupons
-      coupons_count.times do
+      coupons_count.times do |i|
         price = file.readline.to_f
-        self.available_coupons << Coupon.new(price) if price
+        self.available_coupons << Coupon.new(price, i+1) if price
       end
     end
 
     self.random_count = random_percentage * available_coupons.length
   end
 
-  def execute!
-    sort_envelope_types(0)
+  def execute!(mode = 0)
+    sort_envelope_types(mode)
     index = 0
     all_coupons = self.available_coupons
     time = Time.new
     while index < max_iterations
       self.available_coupons = DeepClone.clone(all_coupons)
       solution = initial_greedy_solution
+      test = solution.cost
       solution = spread_non_assigned_coupons(solution)
       solution = local_search(solution)
       if best_solution.nil? or solution.cost > best_solution.cost
@@ -68,7 +69,7 @@ class Grasp
   end
 
   private
-  def sort_envelope_types(mode = 0)
+  def sort_envelope_types(mode)
     #modes: 0 - sort by :price, 1 - higher average coupon price - better, 2 - lower average coupon price - better
     if mode == 0
       self.envelope_types = envelope_types.sort {|x,y| y.price <=> x.price}
@@ -107,7 +108,7 @@ class Grasp
         initial_greedy_solution(candidate_solution, envelope_type_index + 1)
       end
     end
-
+    candidate_solution.unassigned_coupons = DeepClone.clone(self.available_coupons)
     candidate_solution
   end
 

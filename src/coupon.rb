@@ -1,7 +1,8 @@
 class Coupon
-  attr_accessor :price
+  attr_accessor :id, :price
 
-  def initialize(price)
+  def initialize(price, id)
+    self.id = id
     self.price = price
   end
 
