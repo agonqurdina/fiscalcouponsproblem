@@ -28,6 +28,18 @@ class Solution
   def update_envelopes
     invalid_envelopes = []
     envelopes.each do |envelope|
+      unless envelope.valid?
+        self.unassigned_coupons += envelope.coupons
+        invalid_envelopes << envelope
+      end
+    end
+    invalid_envelopes.each do |envelope|
+      self.envelopes.delete envelope
+    end
+  end
+
+  def optimize_envelopes
+    envelopes.each do |envelope|
 
       envelope_type_index = envelope_types.index(envelope.envelope_type)
 

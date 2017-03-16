@@ -36,7 +36,7 @@ require 'readline'
 
 grasp = Grasp.new(0.01)
 grasp.initialize_from_file(ARGV[0] || './storage/Testinstances/New Set/Instance2.txt')
-grasp.execute!(1)
+grasp.execute!(2)
 
 puts 'Unassigned coupons: '
 puts 'Length: ' + grasp.best_solution.unassigned_coupons.length.to_s

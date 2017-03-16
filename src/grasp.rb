@@ -54,7 +54,6 @@ class Grasp
     while index < max_iterations
       self.available_coupons = DeepClone.clone(all_coupons)
       solution = initial_greedy_solution
-      test = solution.cost
       solution = spread_non_assigned_coupons(solution)
       solution = local_search(solution)
       if best_solution.nil? or solution.cost > best_solution.cost
@@ -135,6 +134,7 @@ class Grasp
     no_improvement_count = 0
     while no_improvement_count < self.max_no_improvement
       candidate_solution = tweak(solution)
+      candidate_solution.optimize_envelopes
       if candidate_solution.cost > solution.cost
         solution = candidate_solution
         p 'IMPROVEMENT'
