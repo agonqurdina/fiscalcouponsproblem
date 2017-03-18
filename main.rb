@@ -34,18 +34,23 @@ require 'readline'
 # exit
 # # END OF SWAP method
 
-grasp = Grasp.new(3, 8, 1, 2)
+grasp = Grasp.new(3, 10, 1, 1)
 grasp.initialize_from_file(ARGV[0] || './storage/Testinstances/New Set/Instance1.txt')
-grasp.execute!
+execution_time = grasp.execute!
 
-puts 'Unassigned coupons: '
-puts 'Length: ' + grasp.best_solution.unassigned_coupons.length.to_s
-puts 'Total Price: ' + grasp.best_solution.unassigned_coupons.map {|c| c.price.to_f.round(2)}.inject(:+).to_f.round(2).to_s
-puts 'Coupons: ' + grasp.best_solution.unassigned_coupons.map {|c| c.price.to_f.round(2)}.join(',')
-puts 'Envelopes length: '
-puts grasp.best_solution.envelopes.select { |e| e.valid? }.length
-puts 'Envelopes: '
-puts grasp.best_solution.envelopes.select { |e| e.valid? }.map { |e| e.envelope_type.price }.join(',')
-puts grasp.best_solution.envelopes.select { |e| e.valid? }.map { |e| e.current_amount.to_f.round(2) }.join(',')
+puts "\n"
 puts 'Total Price: '
 puts grasp.best_solution.cost
+puts 'Envelopes: '
+puts grasp.best_solution.envelopes.select { |e| e.valid? }.map { |e| e.envelope_type.price }.join(',')
+# puts grasp.best_solution.envelopes.select { |e| e.valid? }.map { |e| e.current_amount.to_f.round(2) }.join(',')
+puts 'time: '
+puts execution_time
+puts 'Unassigned coupons total: '
+puts grasp.best_solution.unassigned_coupons.length.to_s
+puts 'Unassigned coupons price: '
+puts grasp.best_solution.unassigned_coupons.map {|c| c.price.to_f.round(2)}.inject(:+).to_f.round(2).to_s
+# puts 'Total Price: ' + grasp.best_solution.unassigned_coupons.map {|c| c.price.to_f.round(2)}.inject(:+).to_f.round(2).to_s
+# puts 'Coupons: ' + grasp.best_solution.unassigned_coupons.map {|c| c.price.to_f.round(2)}.join(',')
+# puts 'Envelopes length: '
+# puts grasp.best_solution.envelopes.select { |e| e.valid? }.length

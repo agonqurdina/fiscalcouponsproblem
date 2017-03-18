@@ -65,7 +65,7 @@ class Grasp
     end
     execution_time = (Time.new - time)
     puts "\nFinished!"
-    puts "\nExecution time: " + execution_time.to_s
+    execution_time
   end
 
   private
