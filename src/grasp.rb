@@ -1,13 +1,14 @@
 require "deep_clone"
 class Grasp
-  attr_accessor :envelope_types, :best_solution, :available_coupons, :random_percentage, :random_count, :max_no_improvement, :max_iterations
+  attr_accessor :envelope_types, :best_solution, :available_coupons, :random_percentage, :random_count, :max_no_improvement, :max_iterations, :mode
 
-  def initialize(random_percentage = 0.07, max_iterations = 10, max_no_improvement = 50)
+  def initialize(max_iterations = 10, max_no_improvement = 50, random_percentage = 7, mode = 0)
     self.envelope_types = []
     self.available_coupons = []
     self.max_no_improvement = max_no_improvement
     self.max_iterations = max_iterations
-    self.random_percentage = random_percentage
+    self.random_percentage = random_percentage * 0.01
+    self.mode = mode
   end
 
   def initialize_from_file(path)
@@ -46,7 +47,7 @@ class Grasp
     self.random_count = random_percentage * available_coupons.length
   end
 
-  def execute!(mode = 0)
+  def execute!
     sort_envelope_types(mode)
     index = 0
     all_coupons = self.available_coupons
@@ -121,7 +122,7 @@ class Grasp
       new_envelope = Envelope.new(envelope_types.last)
       new_envelope.coupons = available_coupons.clone
       available_coupons.clear
-
+      solution.unassigned_coupons.clear
       solution.envelopes << new_envelope
     else
       solution.envelopes << Envelope.new(envelope_types.last)

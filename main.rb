@@ -34,9 +34,9 @@ require 'readline'
 # exit
 # # END OF SWAP method
 
-grasp = Grasp.new(0.01)
-grasp.initialize_from_file(ARGV[0] || './storage/Testinstances/New Set/Instance2.txt')
-grasp.execute!(2)
+grasp = Grasp.new(3, 8, 1, 2)
+grasp.initialize_from_file(ARGV[0] || './storage/Testinstances/New Set/Instance1.txt')
+grasp.execute!
 
 puts 'Unassigned coupons: '
 puts 'Length: ' + grasp.best_solution.unassigned_coupons.length.to_s
