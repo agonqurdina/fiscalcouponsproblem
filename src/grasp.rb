@@ -60,7 +60,7 @@ class Grasp
       if best_solution.nil? or solution.cost > best_solution.cost
         self.best_solution = solution
       end
-      p 'cost: ' + solution.cost.to_s
+      # p 'cost: ' + solution.cost.to_s
       index += 1
     end
     execution_time = (Time.new - time)
@@ -72,7 +72,7 @@ class Grasp
   def sort_envelope_types(mode)
     #modes: 0 - sort by :price, 1 - higher average coupon price - better, 2 - lower average coupon price - better
     if mode == 0
-      self.envelope_types = envelope_types.sort {|x,y| y.price <=> x.price}
+      self.envelope_types = envelope_types.shuffle
     elsif mode == 1
       self.envelope_types = envelope_types.sort {|x,y| y.score <=> x.score}
     elsif mode == 2
@@ -141,7 +141,7 @@ class Grasp
         p 'IMPROVEMENT'
         no_improvement_count = 0
       else
-        p "tweak cost: #{candidate_solution.cost}"
+        # p "tweak cost: #{candidate_solution.cost}"
         no_improvement_count += 1
       end
     end
@@ -181,7 +181,7 @@ class Grasp
     arr1[rand1..rand2] = arr2[rand1..rand2]
     arr2[rand1..rand2] = tmp
 
-    p [rand1, rand2]
+    # p [rand1, rand2]
     arr1.delete_if { |i| i.nil? }
     arr2.delete_if { |i| i.nil? }
 
