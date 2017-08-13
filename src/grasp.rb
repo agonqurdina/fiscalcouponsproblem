@@ -1,14 +1,16 @@
 require "deep_clone"
 class Grasp
-  attr_accessor :envelope_types, :best_solution, :available_coupons, :random_percentage, :random_count, :max_no_improvement, :max_iterations, :mode
+  attr_accessor :envelope_types, :best_solution, :available_coupons, :random_percentage, :random_count, :max_no_improvement, :max_iterations, :mode, :algorithm_metrics, :time_diff
 
-  def initialize(max_iterations = 10, max_no_improvement = 50, random_percentage = 7, mode = 0)
+  def initialize(max_iterations = 1, max_no_improvement = 14, random_percentage = 7, mode = 0)
     self.envelope_types = []
     self.available_coupons = []
     self.max_no_improvement = max_no_improvement
     self.max_iterations = max_iterations
     self.random_percentage = random_percentage * 0.01
     self.mode = mode
+    self.algorithm_metrics = []
+    self.time_diff = 0
   end
 
   def initialize_from_file(path)
@@ -51,10 +53,14 @@ class Grasp
     sort_envelope_types(mode)
     index = 0
     all_coupons = self.available_coupons
-    time = Time.new
     while index < max_iterations
+      time = Time.new
       self.available_coupons = DeepClone.clone(all_coupons)
       solution = initial_greedy_solution
+      self.time_diff = (Time.new - time)
+      cost = solution.cost
+      self.algorithm_metrics << { time: time_diff, cost: cost }
+
       solution = spread_non_assigned_coupons(solution)
       solution = local_search(solution)
       if best_solution.nil? or solution.cost > best_solution.cost
@@ -63,9 +69,8 @@ class Grasp
       # p 'cost: ' + solution.cost.to_s
       index += 1
     end
-    execution_time = (Time.new - time)
     puts "\nFinished!"
-    execution_time
+    algorithm_metrics
   end
 
   private
@@ -134,6 +139,7 @@ class Grasp
   def local_search(solution)
     no_improvement_count = 0
     while no_improvement_count < self.max_no_improvement
+      time = Time.new
       candidate_solution = tweak(solution)
       candidate_solution.optimize_envelopes
       if candidate_solution.cost > solution.cost
@@ -144,6 +150,10 @@ class Grasp
         # p "tweak cost: #{candidate_solution.cost}"
         no_improvement_count += 1
       end
+      time_diff2 = (Time.new - time)
+      self.time_diff += time_diff2
+      cost = solution.cost
+      self.algorithm_metrics << { time: time_diff, cost: cost }
     end
     solution
   end

@@ -1,0 +1,1343 @@
+Finished!
+Row: 
+[3, 8, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.195974401
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.89
+
+Finished!
+Row: 
+[3, 8, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.262610883
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.82
+
+Finished!
+Row: 
+[3, 8, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.162646189
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[3, 8, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.192719622
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+104.68
+
+Finished!
+Row: 
+[3, 8, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.183844585
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+139.27
+
+Finished!
+Row: 
+[3, 8, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.187513391
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[3, 10, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.243763302
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.44
+
+Finished!
+Row: 
+[3, 10, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.224375938
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.74
+
+Finished!
+Row: 
+[3, 10, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.189569831
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[3, 10, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.206041123
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+115.01
+
+Finished!
+Row: 
+[3, 10, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.189613064
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+110.22
+
+Finished!
+Row: 
+[3, 10, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.162621188
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[3, 12, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.202285146
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.74
+
+Finished!
+Row: 
+[3, 12, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.194175924
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.48
+
+Finished!
+Row: 
+[3, 12, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.170119329
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[3, 12, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.208917416
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+113.39
+
+Finished!
+Row: 
+[3, 12, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.19484867
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+118.91
+
+Finished!
+Row: 
+[3, 12, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.154628969
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[3, 14, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.193903782
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.66
+
+Finished!
+Row: 
+[3, 14, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.185546018
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.79
+
+Finished!
+Row: 
+[3, 14, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.158062516
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[3, 14, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.196561601
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.58
+
+Finished!
+Row: 
+[3, 14, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.19581098
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+106.82
+
+Finished!
+Row: 
+[3, 14, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.15813777
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[5, 8, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.324789306
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.72
+
+Finished!
+Row: 
+[5, 8, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.30072342
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.76
+
+Finished!
+Row: 
+[5, 8, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.252972813
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[5, 8, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.332530915
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+115.32
+
+Finished!
+Row: 
+[5, 8, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.30229449
+Unassigned coupons total: 
+17
+Unassigned coupons price: 
+145.25
+
+Finished!
+Row: 
+[5, 8, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.251234564
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[5, 10, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.317346827
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.82
+
+Finished!
+Row: 
+[5, 10, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.301900481
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.82
+
+Finished!
+Row: 
+[5, 10, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.268744112
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[5, 10, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.317136606
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+113.02
+
+Finished!
+Row: 
+[5, 10, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.303787881
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+129.62
+
+Finished!
+Row: 
+[5, 10, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.270244325
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[5, 12, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.342222758
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.89
+
+Finished!
+Row: 
+[5, 12, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.307777175
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.66
+
+Finished!
+Row: 
+[5, 12, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.322187293
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[5, 12, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.322906849
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+115.97
+
+Finished!
+Row: 
+[5, 12, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.407659704
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+108.83
+
+Finished!
+Row: 
+[5, 12, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.292816676
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[5, 14, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.344917679
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.74
+
+Finished!
+Row: 
+[5, 14, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.308987878
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.89
+
+Finished!
+Row: 
+[5, 14, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.297353037
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[5, 14, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.319759673
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.14
+
+Finished!
+Row: 
+[5, 14, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.308926459
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+112.77
+
+Finished!
+Row: 
+[5, 14, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.257941224
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[8, 8, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.554160646
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.91
+
+Finished!
+Row: 
+[8, 8, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.48158028
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.66
+
+Finished!
+Row: 
+[8, 8, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.408251556
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[8, 8, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.512832698
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.83
+
+Finished!
+Row: 
+[8, 8, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.485199552
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+99.14
+
+Finished!
+Row: 
+[8, 8, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.40717888
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[8, 10, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.506255288
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.91
+
+Finished!
+Row: 
+[8, 10, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.487755597
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.74
+
+Finished!
+Row: 
+[8, 10, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.40881167
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[8, 10, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.518563023
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+119.77
+
+Finished!
+Row: 
+[8, 10, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.491889923
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+127.33
+
+Finished!
+Row: 
+[8, 10, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.404915981
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[8, 12, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.512436507
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.49
+
+Finished!
+Row: 
+[8, 12, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.492112634
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.73
+
+Finished!
+Row: 
+[8, 12, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.415839952
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[8, 12, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.507292675
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+101.98
+
+Finished!
+Row: 
+[8, 12, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.492440295
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+123.11
+
+Finished!
+Row: 
+[8, 12, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.415706342
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[8, 14, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.510348068
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.91
+
+Finished!
+Row: 
+[8, 14, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.497471218
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.66
+
+Finished!
+Row: 
+[8, 14, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.413551453
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[8, 14, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.519643469
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+116.13
+
+Finished!
+Row: 
+[8, 14, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.50261524
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+99.72
+
+Finished!
+Row: 
+[8, 14, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.414560241
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[10, 8, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.623438905
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.44
+
+Finished!
+Row: 
+[10, 8, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.601331291
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.48
+
+Finished!
+Row: 
+[10, 8, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.504266422
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[10, 8, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.626095489
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+109.95
+
+Finished!
+Row: 
+[10, 8, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.60144888
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+101.3
+
+Finished!
+Row: 
+[10, 8, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.535104197
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[10, 10, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.633472575
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.73
+
+Finished!
+Row: 
+[10, 10, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.642114432
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.29
+
+Finished!
+Row: 
+[10, 10, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.553758015
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[10, 10, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.660855137
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.47
+
+Finished!
+Row: 
+[10, 10, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.676368971
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+122.73
+
+Finished!
+Row: 
+[10, 10, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.546318626
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[10, 12, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.692757968
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.55
+
+Finished!
+Row: 
+[10, 12, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.650891939
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+103.72
+
+Finished!
+Row: 
+[10, 12, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.545586564
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[10, 12, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.658010183
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+111.77
+
+Finished!
+Row: 
+[10, 12, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.630899083
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+119.56
+
+Finished!
+Row: 
+[10, 12, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.517234252
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[10, 14, 1, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.651649407
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.91
+
+Finished!
+Row: 
+[10, 14, 1, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.618551969
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+102.89
+
+Finished!
+Row: 
+[10, 14, 1, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.569575844
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
+
+Finished!
+Row: 
+[10, 14, 5, 0]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.760510378
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+109.07
+
+Finished!
+Row: 
+[10, 14, 5, 1]
+Total Price: 
+70.0
+Envelopes: 
+20.0,20.0,20.0,10.0
+time: 
+0.637698725
+Unassigned coupons total: 
+20
+Unassigned coupons price: 
+123.84
+
+Finished!
+Row: 
+[10, 14, 5, 2]
+Total Price: 
+75.0
+Envelopes: 
+15.0,15.0,15.0,15.0,15.0
+time: 
+0.533360849
+Unassigned coupons total: 
+0
+Unassigned coupons price: 
+0.0
